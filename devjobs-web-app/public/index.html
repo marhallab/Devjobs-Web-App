@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <style>
-      body{
-        margin: 0;
-      }
 
-      #app *{
-       font-family: Kumbh Sans; 
-       font-size: 16px;
-       line-height: 26px;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <style>
+    body {
+      margin: 0;
+    }
 
-      h1{
-        font-size: 28px;
-        line-height: 34px;
-      }
+    #app * {
+      font-family: Kumbh Sans;
+    }
 
-      h2{
-        font-size: 24px;
-        line-height: 29px;
-      }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
 
-      h3{
-        font-size: 20px;
-        line-height: 24px;
-      }
+    h1 {
+      font-size: 28px;
+      line-height: 34px;
+    }
 
-      h4{
-        font-size: 14px;
-        line-height: 18px;
-      }
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+    }
 
-    </style>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    h4 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
