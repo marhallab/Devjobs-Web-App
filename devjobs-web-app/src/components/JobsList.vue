@@ -9,8 +9,8 @@
 <style lang="scss" scoped>
 
 .jobsList{
-  background-color: red;
-
+  background-color: $veryDarkBlue;
+  
   &-jobs{
     color: $violet ;
   }
