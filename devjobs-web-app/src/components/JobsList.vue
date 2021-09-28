@@ -1,5 +1,6 @@
 <template>
   <div class="jobsList">
+    <job/>
     <div class="jobsList-jobs" v-for="job in jobs" :key="job.id">
       <p>{{ job.title }}</p>
     </div>
@@ -10,7 +11,6 @@
 
 .jobsList{
  
-  
   &-jobs{
     color: $violet ;
   }
@@ -19,6 +19,7 @@
 
 <script>
 import gql from "graphql-tag";
+import job from "../components/Job.vue"
 
 export default {
   name: "JobsList",
@@ -32,5 +33,8 @@ export default {
       }
     `,
   },
+  components:{
+    job
+  }
 };
 </script>
