@@ -9,7 +9,7 @@
 <style lang="scss" scoped>
 
 .jobsList{
-  background-color: $veryDarkBlue;
+ 
   
   &-jobs{
     color: $violet ;
