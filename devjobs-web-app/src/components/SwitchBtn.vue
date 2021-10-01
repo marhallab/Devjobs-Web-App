@@ -43,7 +43,11 @@
 
 <script>
 export default {
-  props: ["value"],
+  props: {
+    value :{
+      type : Boolean,
+    }
+  },
   methods: {
     changeSwitchValue() {
       this.$emit("input", !this.value);

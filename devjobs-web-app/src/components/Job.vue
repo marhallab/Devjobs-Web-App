@@ -1,10 +1,11 @@
 <template>
   <div class="job">
-    <img src="../assets/desktop/icon-sun.svg" alt="" />
-    <p>1h ago full time</p>
-    <h4> Senior Software Dev </h4>
+    <div class="job-logo">
+      <img src="//logo.clearbit.com/spotify.com" />
+      <p>1h ago full time</p>
+    </div>
+    <h4>Senior Software Dev</h4>
     <p>Scoot</p>
-    <br>
     <p>USA</p>
   </div>
 </template>
@@ -16,13 +17,35 @@
   background-color: $white;
   text-align: start;
   padding-left: 30px;
+
+  &-logo {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    p {
+      margin-top: 10px;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
-h4{
-    font-weight: bold;
+h4 {
+  font-weight: bold;
 }
 
-p{
-    color: $darkGrey;
+p {
+  color: $darkGrey;
 }
 </style>
+
+<script>
+export default {
+  props: {
+    logo: String,
+  },
+};
+</script>
